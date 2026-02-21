@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { services } from "@/data/siteData";
+import { serviceImages } from "@/data/imageMap";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -19,19 +20,25 @@ const ServiceDetail = () => {
     );
   }
 
+  const bannerImage = serviceImages[service.slug];
+
   return (
     <Layout>
-      {/* Banner */}
-      <section className="gradient-primary section-padding text-primary-foreground">
-        <div className="container-custom">
+      {/* Banner with image */}
+      <section className="relative h-[340px] md:h-[420px] overflow-hidden">
+        {bannerImage && (
+          <img src={bannerImage} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
+        )}
+        <div className="absolute inset-0 gradient-overlay" />
+        <div className="relative z-10 container-custom h-full flex flex-col justify-end pb-10">
           <div className="flex gap-3 mb-4">
             <Link to="/" className="text-primary-foreground/70 hover:text-primary-foreground text-sm">Home</Link>
             <span className="text-primary-foreground/50">/</span>
             <Link to="/services" className="text-primary-foreground/70 hover:text-primary-foreground text-sm">Services</Link>
             <span className="text-primary-foreground/50">/</span>
-            <span className="text-sm">{service.title}</span>
+            <span className="text-sm text-primary-foreground">{service.title}</span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">{service.title}</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-3">{service.title}</h1>
           <p className="text-lg text-primary-foreground/90 max-w-2xl">{service.shortDescription}</p>
         </div>
       </section>
