@@ -15,7 +15,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const IndustriesSection = () => (
-  <section className="section-padding bg-card">
+  <section className="section-padding bg-card hidden">
     <div className="container-custom">
       <ScrollReveal>
         <div className="text-center mb-12">
