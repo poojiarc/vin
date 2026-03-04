@@ -23,7 +23,7 @@ export const services: ServiceData[] = [
     title: "IT Staffing Solutions",
     shortDescription: "Connect with top-tier IT talent for your technology needs.",
     description: "We provide comprehensive IT staffing solutions to help organizations find the right technology professionals. From contract positions to permanent placements, we source candidates with expertise in the latest technologies.",
-    subServices: ["Contract / C2C / W2 Hiring", "Permanent Placements", "Niche & Emerging Technologies", "End-to-End Recruitment Support", "Cloud & DevOps Staffing", "Cybersecurity Talent Acquisition"],
+    subServices: ["Contract / C2C / W2 Hiring", "Permanent Placements", "Niche & Emerging Technologies", "End-to-End Recruitment Support", "Cloud & DevOps Staffing", "Cybersecurity Talent Acquisition","PayRoll Management"],
     icon: "Monitor",
   },
   {
@@ -87,7 +87,7 @@ export const services: ServiceData[] = [
     title: "Contractor & C2C Services",
     shortDescription: "Flexible contractor and Corp-to-Corp engagement models.",
     description: "We facilitate seamless contractor and C2C engagements, managing all aspects from contract negotiations to compliance, enabling businesses to scale their workforce efficiently.",
-    subServices: ["C2C Placements", "1099 Contractor Management", "W2 Contract Staffing", "Contract Negotiations", "Compliance Management", "Vendor Partnerships"],
+    subServices: ["C2C Placements", "1099 Contractor Management", "W2 Contract Staffing", "Contract Negotiations", "Compliance Management", "Vendor Partnerships","Payroll Services"],
     icon: "Handshake",
   },
   {

@@ -89,11 +89,8 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-border py-6">
         <div className="container-custom text-center space-y-1">
-          <p className="text-sm text-muted-foreground">
-            Made with ❤️ by <a href="https://staffarc.com" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">StaffArc</a>
-          </p>
           <p className="text-xs text-muted-foreground">
-            © 2026 Vinyxa. All rights reserved.
+            © 2016 Vinyxa. All rights reserved.
           </p>
         </div>
       </div>
